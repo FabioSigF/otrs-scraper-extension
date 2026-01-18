@@ -5,7 +5,7 @@
   "permissions": ["tabs", "scripting"],
   "host_permissions": [
     "https://otrs.callink.com.br/*",
-    "http://localhost:3000/*"
+    "https://ticketflow-tau.vercel.app/*"
   ],
   "background": {
     "service_worker": "background.js"
@@ -16,7 +16,7 @@
       "js": ["content-otrs.js"]
     },
     {
-      "matches": ["http://localhost:3000/*"],
+      "matches": ["https://ticketflow-tau.vercel.app/*"],
       "js": ["content-frontend.js"]
     }
   ],
